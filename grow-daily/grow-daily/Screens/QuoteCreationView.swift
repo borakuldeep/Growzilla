@@ -1,3 +1,4 @@
+
 //
 //  QuoteCreationView.swift
 //  grow-daily
@@ -60,3 +61,4 @@ struct QuoteCreationView: View {
     QuoteCreationView(showingCreateQuote: .constant(true), selectedQuote: .constant(nil))
         .modelContainer(for: Quote.self, inMemory: true)
 }
+

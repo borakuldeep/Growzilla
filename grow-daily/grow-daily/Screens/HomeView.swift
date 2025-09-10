@@ -106,11 +106,6 @@ struct HomeView: View {
                     showingSettings: $showingSettings
                 )
             }
-            .sheet(isPresented: $showingDetail) {
-                if let quote = selectedQuote {
-                    QuoteDetailView(quote: quote)
-                }
-            }
             .onAppear {
                 // Prioritize last notification's quote
                 if let quoteIDString = UserDefaults.standard.string(

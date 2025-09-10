@@ -111,7 +111,16 @@ struct ScheduleSheet: View {
                             }.foregroundStyle(Color.red)
                         }
                     }
-                    Text("Only one fixed quote can be scheduled at a time").font(.subheadline)
+                    Text("Only one fixed quote can be scheduled at a time")
+                        .font(.subheadline)
+
+                    if isQuoteScheduled {
+                        Section {
+                            Text(
+                                "Scheduling this quote will remove any existing scheduled fixed quotes"
+                            ).font(.subheadline).foregroundColor(.red)
+                        }
+                    }
                 }
                 .navigationTitle("Schedule Quote")
                 .toolbar {
@@ -122,9 +131,14 @@ struct ScheduleSheet: View {
                     }
                     ToolbarItem(placement: .confirmationAction) {
                         Button("Schedule") {
-                            //remove all existing fixed quote noti - 1 max anyway
-                            removeAllFixedQuoteNotifications()
 
+                            let allScheduledFetch = FetchDescriptor<ScheduledQuote>()
+                            if let allScheduledQuotes = try? modelContext.fetch(allScheduledFetch) {
+                                for item in allScheduledQuotes {
+                                    modelContext.delete(item)
+                                }
+                            }
+                            
                             // Insert new scheduled quote with notification time
                             let scheduled = ScheduledQuote(
                                 quoteID: quote.id,
@@ -133,7 +147,7 @@ struct ScheduleSheet: View {
                             )
                             modelContext.insert(scheduled)
                             try? modelContext.save()
-                            scheduleScheduledQuoteNotifications()
+                            scheduleScheduledQuoteNotifications(quoteToSchedule: scheduled)
                             showingScheduleSheet = false
                         }
                         .disabled(isQuoteScheduled)

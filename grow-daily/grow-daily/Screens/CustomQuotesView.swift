@@ -4,23 +4,24 @@
 //  Created by Grok on 9/7/2025.
 //  Copyright © 2025 xAI. All rights reserved.
 
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 struct CustomQuotesView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query(filter: #Predicate<Quote> { $0.isCustom }) private var customQuotes: [Quote]
+    @Query(filter: #Predicate<Quote> { $0.isCustom }) private var customQuotes:
+        [Quote]
     @Binding var selectedQuote: Quote?
     @Binding var showingDetail: Bool
     @State private var showingCreateQuote = false
-    
+
     var localQuotes = [] as [Quote]
-    
+
     var body: some View {
         NavigationStack {
             List {
                 Section("Custom Quotes") {
-                    if customQuotes.isEmpty && localQuotes.isEmpty  {
+                    if customQuotes.isEmpty && localQuotes.isEmpty {
                         Text("No custom quotes yet")
                             .foregroundColor(.secondary)
                     } else {
@@ -36,20 +37,26 @@ struct CustomQuotesView: View {
                                     quote.isFavorite.toggle()
                                     try? modelContext.save()
                                 } label: {
-                                    Label("Favorite", systemImage: quote.isFavorite ? "heart.fill" : "heart")
+                                    if quote.isFavorite {
+                                        Label("Unfavorite", systemImage: "heart.slash")
+                                    } else {
+                                        Label("Favorite", systemImage: "heart")
+                                    }
                                 }
                                 .tint(.pink)
-                                
+
                                 Button(role: .destructive) {
                                     modelContext.delete(quote)
                                 } label: {
                                     Label("Delete", systemImage: "trash")
                                 }
                             }
-                            .onTapGesture {
-                                selectedQuote = quote
-                                showingDetail = true
-                            }
+//                            .onTapGesture {
+//                                selectedQuote = quote
+//                                //showingDetail = true
+//                                showingCreateQuote = true
+//                                isReadOnly = true
+//                            }
                         }
                     }
                 }
@@ -64,17 +71,20 @@ struct CustomQuotesView: View {
                 }
             }
             .sheet(isPresented: $showingCreateQuote) {
-                QuoteCreationView(showingCreateQuote: $showingCreateQuote, selectedQuote: $selectedQuote)
+                QuoteCreationView(
+                    showingCreateQuote: $showingCreateQuote,
+                    selectedQuote: $selectedQuote,
+                )
             }
-            .sheet(isPresented: $showingDetail) {
-                QuoteDetailView(quote: selectedQuote)
-            }
+//            .sheet(isPresented: $showingDetail) {
+//                QuoteDetailView(quote: selectedQuote)
+//            }
         }
     }
 }
 
 #Preview {
-    
+
     let sampleQuotes = [
         Quote(
             text: "The only way to do great work is to love what you do.",
@@ -84,7 +94,7 @@ struct CustomQuotesView: View {
         Quote(
             text: "Stay hungry, stay foolish.",
             author: "Steve Jobs",
-            isFavorite: true
+            isFavorite: false
         ),
         Quote(
             text: "Be the change you wish to see in the world.",
@@ -92,6 +102,10 @@ struct CustomQuotesView: View {
             isFavorite: true
         ),
     ]
-    CustomQuotesView(selectedQuote: .constant(nil), showingDetail: .constant(false), localQuotes: sampleQuotes)
-        .modelContainer(for: Quote.self, inMemory: true)
+    CustomQuotesView(
+        selectedQuote: .constant(nil),
+        showingDetail: .constant(false),
+        localQuotes: sampleQuotes
+    )
+    .modelContainer(for: Quote.self, inMemory: true)
 }
