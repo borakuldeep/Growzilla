@@ -17,6 +17,7 @@ import UserNotifications
 
 struct ScheduleSheet: View {
     @Environment(\.modelContext) private var modelContext
+    @Environment(\.colorScheme) var colorScheme
     @Binding var schedulingQuote: Quote?
     @Binding var showingScheduleSheet: Bool
     let options = [
@@ -33,6 +34,7 @@ struct ScheduleSheet: View {
             of: Date()
         ) ?? Date()  // Default to 9:00 AM
     @State private var errorMessage: String?
+    @State private var initialNotificationTime: Date?
 
     // Fetch to check if the quote is already scheduled
     private func checkIfQuoteIsScheduled(quoteID: UUID) -> Bool {
@@ -53,6 +55,7 @@ struct ScheduleSheet: View {
 
     var body: some View {
         if let quote = schedulingQuote {
+
             NavigationStack {
                 Form {
                     Section(header: Text("Quote")) {
@@ -111,34 +114,47 @@ struct ScheduleSheet: View {
                             }.foregroundStyle(Color.red)
                         }
                     }
-                    Text("Only one fixed quote can be scheduled at a time")
-                        .font(.subheadline)
+                    Text("NOTE: Only one fixed quote can be scheduled at a time")
+                        .font(.subheadline).foregroundColor(.red)
 
-                    if isQuoteScheduled {
-                        Section {
-                            Text(
-                                "Scheduling this quote will remove any existing scheduled fixed quotes"
-                            ).font(.subheadline).foregroundColor(.red)
-                        }
-                    }
+//                    if !isQuoteScheduled {
+//                        Section {
+//                            Text(
+//                                "Scheduling this quote will remove any existing fixed quotes"
+//                            ).font(.subheadline).foregroundColor(.red)
+//                        }
+//                    }
                 }
+                .gradientBackground()
                 .navigationTitle("Schedule Quote")
+                //.background(.clear)
+                .scrollContentBackground(.hidden)
+                //colorScheme == .dark ? .white : .black
+//                .background(
+//                    colorScheme == .dark
+//                        ? Color(hex: "#454545") : Color(hex: "#FFFAF5")
+//                )
+                //.scrollContentBackground(.hidden)
                 .toolbar {
                     ToolbarItem(placement: .cancellationAction) {
                         Button("Cancel") {
                             showingScheduleSheet = false
-                        }
+                        }.foregroundStyle(colorScheme == .dark ? .white : .blue)
                     }
                     ToolbarItem(placement: .confirmationAction) {
                         Button("Schedule") {
 
-                            let allScheduledFetch = FetchDescriptor<ScheduledQuote>()
-                            if let allScheduledQuotes = try? modelContext.fetch(allScheduledFetch) {
+                            let allScheduledFetch = FetchDescriptor<
+                                ScheduledQuote
+                            >()
+                            if let allScheduledQuotes = try? modelContext.fetch(
+                                allScheduledFetch
+                            ) {
                                 for item in allScheduledQuotes {
                                     modelContext.delete(item)
                                 }
                             }
-                            
+
                             // Insert new scheduled quote with notification time
                             let scheduled = ScheduledQuote(
                                 quoteID: quote.id,
@@ -147,10 +163,17 @@ struct ScheduleSheet: View {
                             )
                             modelContext.insert(scheduled)
                             try? modelContext.save()
-                            scheduleScheduledQuoteNotifications(quoteToSchedule: scheduled)
+                            scheduleScheduledQuoteNotifications(
+                                quoteToSchedule: scheduled
+                            )
                             showingScheduleSheet = false
                         }
-                        .disabled(isQuoteScheduled)
+                        .buttonStyle(.borderedProminent)
+                        .buttonBorderShape(.capsule)
+                        .disabled(
+                            isQuoteScheduled
+                                && notificationTime == initialNotificationTime
+                        )
                     }
                 }
                 .onAppear {
@@ -169,10 +192,15 @@ struct ScheduleSheet: View {
                             fetchDescriptor
                         ).first {
                             notificationTime = existing.notificationTime
+                            initialNotificationTime = existing.notificationTime
                         }
+                    } else {
+                        initialNotificationTime = notificationTime  // Set to default if not scheduled
                     }
                 }
+
             }
+
         }
     }
 

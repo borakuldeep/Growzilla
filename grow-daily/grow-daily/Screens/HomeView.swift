@@ -7,62 +7,189 @@
 import SwiftData
 import SwiftUI
 
+var defaultNotificationTimes: [[String: Int]] = [["hour": 16, "minute": 22]]
+
 struct HomeView: View {
     @Environment(\.modelContext) private var modelContext
+    @Environment(\.colorScheme) var colorScheme
     @Query private var quotes: [Quote]
     @Binding var selectedQuote: Quote?
-    @Binding var showingDetail: Bool
+    //@Binding var showingDetail: Bool
     @Binding var showingSettings: Bool
     @Binding var notificationTimes: [[String: Int]]
     @State private var showCopiedToast = false
+
+    @State private var notificationCount = 0  // State to store notification count
+
+    let placeholderQuote = Quote(
+        text: "Life is 10% what happens to us and 90% how we react to it"
+    )
+
+    // Use @State instead of @AppStorage for dictionary
+    @State private var selectedCategories: [String: Bool] = [
+        "Life Wisdom": false,
+        "Health": false,
+        "Motivational": false,
+        "Wealth": false,
+    ]
+
+    // Function to save selectedCategories to UserDefaults
+    private func saveSelectedCategories() {
+        do {
+            let data = try JSONEncoder().encode(selectedCategories)
+            UserDefaults.standard.set(data, forKey: "selectedCategories")
+        } catch {
+            print("Error encoding selectedCategories: \(error)")
+        }
+    }
+
+    // Function to load selectedCategories from UserDefaults
+    private func loadSelectedCategories() {
+        if let data = UserDefaults.standard.data(forKey: "selectedCategories") {
+            do {
+                let decoded = try JSONDecoder().decode(
+                    [String: Bool].self,
+                    from: data
+                )
+                selectedCategories = decoded
+            } catch {
+                print("Error decoding selectedCategories: \(error)")
+            }
+        }
+    }
 
     var body: some View {
         NavigationStack {
             VStack {
                 Spacer()  // Center quote vertically
-                if let quote = selectedQuote {
+                if notificationCount == 0 {
+                    VStack(spacing: 30) {
+                        // Welcome message
+                        Text("Welcome to Yes You Can!")
+                            .font(.title).padding(.top, 30)
+                        Text(
+                            "We believe words have power to change minds and the world itself."
+                        )
+                        .font(.callout)
+                        .padding(.trailing)
+                        Text(
+                            "We hope these quotes will motivate you to become better everyday."
+                        )
+                        .font(.callout)
+                        .padding(.trailing)
+                        Text("Please choose one or more categories to start.")
+                            .font(.callout)
+                            .padding(.trailing)
+
+                        // List with custom padding
+                        List {
+                            ForEach(
+                                selectedCategories.keys.sorted(),
+                                id: \.self
+                            ) { category in
+                                Toggle(
+                                    category,
+                                    isOn: Binding(
+                                        get: {
+                                            selectedCategories[category]
+                                                ?? false
+                                        },
+                                        set: { newValue in
+                                            selectedCategories[category] =
+                                                newValue
+                                            saveSelectedCategories()  // Save on change
+                                        }
+                                    )
+                                )
+                                .toggleStyle(CheckToggleStyle())
+                            }
+                        }
+                        .scrollContentBackground(.hidden)
+                        //.padding(.horizontal, 16) // Explicit padding to match text
+                        //.background(Color.gray.opacity(0.1)) // Optional: to visualize bounds
+
+                        // Button with consistent padding
+                        Button("All Done") {
+                            Task {
+                                let userSelected = selectedCategories.filter {
+                                    $0.value
+                                }
+                                .map { $0.key }
+                                print("userSelected: \(userSelected)")
+                                processQuotes(
+                                    for: userSelected,
+                                    in: modelContext
+                                )
+                                notificationTimes =
+                                    defaultNotificationTimes
+                                UserDefaults.standard.set(
+                                    notificationTimes,
+                                    forKey: "notificationTimes"
+                                )
+                                scheduleNotifications()
+                                notificationCount = await getNotificationCount()
+                                print("Button tapped!")
+                            }
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .buttonBorderShape(.capsule)
+                        .disabled(!selectedCategories.values.contains(true))
+                        .padding(.horizontal, 16)  // Match List padding
+                    }
+                    .padding(.horizontal, 16)  // Outer padding for the entire VStack
+
+                } else if let quote = selectedQuote {
                     VStack(alignment: .leading, spacing: 10) {
                         Text(quote.text)
                             .font(.title2)
                             .padding(.horizontal)
-                        if let author = quote.author {
-                            Text(author)
-                                .font(.subheadline)
-                                .foregroundColor(.secondary)
-                                .padding(.horizontal)
+                        Text(quote.author ?? "")
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                            .padding(.horizontal)
+                        if selectedQuote?.text == placeholderQuote.text {
+                            Text(
+                                "This is a placeholder quote until you get from earlist schedule notification."
+                            )
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                            .padding(.horizontal)
                         }
-                        HStack(spacing: 20) {
-                            Spacer()
-                            Button(action: {
-                                quote.isFavorite.toggle()
-                                try? modelContext.save()
-                            }) {
-                                Image(
-                                    systemName: quote.isFavorite
+                        
+                        if selectedQuote?.text == placeholderQuote.text {
+                            HStack(spacing: 20) {
+                                Spacer()
+                                Button(action: {
+                                    quote.isFavorite.toggle()
+                                    try? modelContext.save()
+                                }) {
+                                    Image(
+                                        systemName: quote.isFavorite
                                         ? "heart.fill" : "heart"
-                                )
-                                .font(.title)
-                                .foregroundColor(
-                                    quote.isFavorite ? .pink : .gray
-                                )
-                            }
-                            Spacer()
-                            Button(action: {
-                                UIPasteboard.general.string = quote.text
-                                showCopiedToast = true
-                                DispatchQueue.main.asyncAfter(
-                                    deadline: .now() + 2
-                                ) {
-                                    showCopiedToast = false
-                                }
-                            }) {
-                                Image(systemName: "doc.on.doc")
+                                    )
                                     .font(.title)
-                                    .foregroundColor(.gray)
+                                    .foregroundColor(
+                                        quote.isFavorite ? .pink : .gray
+                                    )
+                                }
+                                Spacer()
+                                Button(action: {
+                                    UIPasteboard.general.string = quote.text
+                                    showCopiedToast = true
+                                    DispatchQueue.main.asyncAfter(
+                                        deadline: .now() + 2
+                                    ) {
+                                        showCopiedToast = false
+                                    }
+                                }) {
+                                    Image(systemName: "doc.on.doc")
+                                        .font(.title)
+                                        .foregroundColor(.gray)
+                                }
+                                Spacer()
                             }
-                            Spacer()
+                            .padding()
                         }
-                        .padding()
                         // Toast view
                         if showCopiedToast {
                             HStack {
@@ -90,13 +217,17 @@ struct HomeView: View {
                 }
                 Spacer()  // Center quote vertically
             }
-            .navigationTitle("Daily Quote")
+            .gradientBackground()
+            //.navigationTitle("Yes You Can")
             .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button(action: {
-                        showingSettings = true
-                    }) {
-                        Image(systemName: "gearshape")
+                if notificationCount > 0 {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button(action: {
+                            showingSettings = true
+                        }) {
+                            Image(systemName: "gearshape")
+                                .foregroundStyle(colorScheme == .dark ? .white : .blue)
+                        }
                     }
                 }
             }
@@ -105,6 +236,9 @@ struct HomeView: View {
                     notificationTimes: $notificationTimes,
                     showingSettings: $showingSettings
                 )
+            }
+            .task {
+                notificationCount = await getNotificationCount()
             }
             .onAppear {
                 // Prioritize last notification's quote
@@ -122,20 +256,22 @@ struct HomeView: View {
                         {
                             selectedQuote = quote
                         } else {
-                            selectedQuote = quotes.randomElement()
+                            selectedQuote = placeholderQuote  //quotes.randomElement()
                         }
                     } catch {
                         print("Error fetching quote by ID: \(error)")
-                        selectedQuote = quotes.randomElement()
+                        selectedQuote = placeholderQuote  //quotes.randomElement()
                     }
                 } else {
-                    selectedQuote = quotes.randomElement()
+                    selectedQuote = placeholderQuote  //quotes.randomElement()
                 }
+                print("on appear called")
                 // Reload notification times and reschedule
                 notificationTimes =
                     UserDefaults.standard.array(forKey: "notificationTimes")
-                    as? [[String: Int]] ?? [["hour": 10, "minute": 50]]
-                scheduleNotifications()
+                    as? [[String: Int]] ?? defaultNotificationTimes
+                //scheduleNotifications()
+                //print(notificationTimes)
             }
             .onReceive(
                 NotificationCenter.default.publisher(
@@ -155,10 +291,11 @@ struct HomeView: View {
                         }
                     } catch {
                         print("Error fetching quote by ID: \(error)")
-                        selectedQuote = quotes.randomElement()
+                        selectedQuote = placeholderQuote  //quotes.randomElement()
                     }
                 }
             }
+
         }
     }
 }
@@ -166,7 +303,6 @@ struct HomeView: View {
 #Preview {
     HomeView(
         selectedQuote: .constant(nil),
-        showingDetail: .constant(false),
         showingSettings: .constant(false),
         notificationTimes: .constant([])
     )

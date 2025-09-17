@@ -1,0 +1,747 @@
+[
+  {
+    "text": "The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well.",
+    "author": "Ralph Waldo Emerson",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is what happens when you're busy making other plans.",
+    "author": "John Lennon",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "In the end, it's not the years in your life that count. It's the life in your years.",
+    "author": "Abraham Lincoln",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "You only live once, but if you do it right, once is enough.",
+    "author": "Mae West",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The unexamined life is not worth living.",
+    "author": "Socrates",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is not about finding yourself. Life is about creating yourself.",
+    "author": "George Bernard Shaw",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Do not go where the path may lead, go instead where there is no path and leave a trail.",
+    "author": "Ralph Waldo Emerson",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The greatest pleasure in life is doing what people say you cannot do.",
+    "author": "Walter Bagehot",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is either a daring adventure or nothing at all.",
+    "author": "Helen Keller",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The only way to find true happiness is to risk being completely cut open.",
+    "author": "Chuck Palahniuk",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "We don't stop playing because we grow old; we grow old because we stop playing.",
+    "author": "George Bernard Shaw",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is 10% what happens to you and 90% how you react to it.",
+    "author": "Charles R. Swindoll",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The best way to find yourself is to lose yourself in the service of others.",
+    "author": "Mahatma Gandhi",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "To live is the rarest thing in the world. Most people exist, that is all.",
+    "author": "Oscar Wilde",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The two most important days in your life are the day you are born and the day you find out why.",
+    "author": "Mark Twain",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life shrinks or expands in proportion to one's courage.",
+    "author": "Anaïs Nin",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The only thing necessary for the triumph of evil is for good men to do nothing.",
+    "author": "Edmund Burke",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is not measured by the number of breaths we take, but by the moments that take our breath away.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Happiness is not something ready-made. It comes from your own actions.",
+    "author": "Dalai Lama",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The greatest mistake you can make in life is to be continually fearing you will make one.",
+    "author": "Elbert Hubbard",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "You must be the change you wish to see in the world.",
+    "author": "Mahatma Gandhi",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is like riding a bicycle. To keep your balance, you must keep moving.",
+    "author": "Albert Einstein",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The only way to deal with an unfree world is to become so absolutely free that your very existence is an act of rebellion.",
+    "author": "Albert Camus",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Not all those who wander are lost.",
+    "author": "J.R.R. Tolkien",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The meaning of life is to give life meaning.",
+    "author": "Ken Hudgins",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+    "author": "Aristotle",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is a succession of lessons which must be lived to be understood.",
+    "author": "Ralph Waldo Emerson",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The only real mistake is the one from which we learn nothing.",
+    "author": "Henry Ford",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Do not let what you cannot do interfere with what you can do.",
+    "author": "John Wooden",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is not about waiting for the storm to pass but learning to dance in the rain.",
+    "author": "Vivian Greene",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The wound is the place where the light enters you.",
+    "author": "Rumi",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "You can’t go back and change the beginning, but you can start where you are and change the ending.",
+    "author": "C.S. Lewis",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is a journey, not a race.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The only limit to our realization of tomorrow will be our doubts of today.",
+    "author": "Franklin D. Roosevelt",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "What you do today can improve all your tomorrows.",
+    "author": "Ralph Marston",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+    "author": "Nelson Mandela",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is not a problem to be solved, but a reality to be experienced.",
+    "author": "Søren Kierkegaard",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The only thing you take with you when you’re gone is what you leave behind.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Do not judge my story by the chapter you walked in on.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The greatest wealth is to live content with little.",
+    "author": "Plato",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is too short to waste time hating anyone.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The best revenge is to live well.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "You get in life what you have the courage to ask for.",
+    "author": "Oprah Winfrey",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The only way to make sense out of change is to plunge into it, move with it, and join the dance.",
+    "author": "Alan Watts",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is a series of natural and spontaneous changes. Don’t resist them; that only creates sorrow.",
+    "author": "Lao Tzu",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The hardest thing in life is to know which bridge to cross and which to burn.",
+    "author": "David Russell",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is not about how fast you run or how high you climb, but how well you bounce.",
+    "author": "Vivian Komori",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The mind is everything. What you think you become.",
+    "author": "Buddha",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life’s most persistent and urgent question is, 'What are you doing for others?'",
+    "author": "Martin Luther King Jr.",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The only way to avoid criticism is to do nothing, say nothing, and be nothing.",
+    "author": "Aristotle",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is a balance of holding on and letting go.",
+    "author": "Rumi",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The secret of life is to have no fear.",
+    "author": "Fela Kuti",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "You don’t have to be rich to sparkle.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is like a Wi-Fi signal—just when you think you’re connected, it drops.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The best way to predict your future is to create it.",
+    "author": "Peter Drucker",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is not about waiting for the right moment; it’s about making the moment right.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The only person you should try to be better than is the person you were yesterday.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is a book and there are a thousand pages I have not yet read.",
+    "author": "Cassandra Clare",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The greatest gift you can give someone is your time, because when you give your time, you’re giving a portion of your life you can’t get back.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is not a matter of holding good cards, but of playing a poor hand well.",
+    "author": "Robert Louis Stevenson",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The only thing that makes life possible is permanent, intolerable uncertainty: not knowing what comes next.",
+    "author": "Ursula K. Le Guin",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is a mystery to be lived, not a problem to be solved.",
+    "author": "Adrienne Rich",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The purpose of our lives is to be happy.",
+    "author": "Dalai Lama",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is about making an impact, not making an income.",
+    "author": "Kevin Kruse",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The only thing worse than being blind is having sight but no vision.",
+    "author": "Helen Keller",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is a canvas; throw all the paint you can at it.",
+    "author": "Danny Kaye",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The greatest risk in life is not taking one.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is too important to be taken seriously.",
+    "author": "Oscar Wilde",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The biggest adventure you can take is to live the life of your dreams.",
+    "author": "Oprah Winfrey",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is a daring adventure or it is nothing.",
+    "author": "Helen Keller",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The only way to live a remarkable life is to take remarkable risks.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is not about how many times you fall, but how many times you get back up.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The art of life is to know how to enjoy a little and to endure much.",
+    "author": "William Hazlitt",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is a song—sing it. Life is a game—play it.",
+    "author": "Sai Baba",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The only constant in life is change.",
+    "author": "Heraclitus",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is a mirror and will reflect back to the thinker what he thinks into it.",
+    "author": "Ernest Holmes",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The greatest discovery of all time is that a person can change his future by merely changing his attitude.",
+    "author": "Oprah Winfrey",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is not about finding shelter from the storm, but about learning to dance in the rain.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The only limit to your impact is your imagination and commitment.",
+    "author": "Tony Robbins",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is a great big canvas, and you should throw all the paint on it you can.",
+    "author": "Danny Kaye",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The only way to live is to accept each minute as an unrepeatable miracle.",
+    "author": "Tara Brach",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is a balance between holding on and letting go.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The greatest lessons in life are learned from our failures.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is not about waiting for the perfect moment, but making every moment perfect.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The only way to grow is to step outside your comfort zone.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is a journey to be experienced, not a problem to be solved.",
+    "author": "Winnie the Pooh",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The only thing you can control is how you respond to the things you can’t control.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is not about what you achieve, but who you become in the process.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The beauty of life lies in its imperfections.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is a series of moments, and each one is a new beginning.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The only way to find peace is to embrace the chaos of life.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is a gift, and it offers us the privilege, opportunity, and responsibility to give something back.",
+    "author": "Tony Robbins",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The only way to truly know life is to live it fully.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is a puzzle; every piece fits if you find the right place for it.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The only thing that makes life worth living is love.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is a story, and you are the author.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The only way to live a meaningful life is to live it with purpose.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is not about how much you have, but how much you enjoy.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The only true wisdom is in knowing you know nothing.",
+    "author": "Socrates",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "Life is a dance, and you must learn the steps as you go.",
+    "author": "Unknown",
+    "category": "Life Wisdom"
+  },
+  {
+    "text": "The journey of a thousand miles begins with a single step.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "Knowing others is intelligence; knowing yourself is true wisdom.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "When you are content to be simply yourself and don’t compare or compete, everyone will respect you.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "The Tao that can be told is not the eternal Tao.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "A leader is best when people barely know he exists, when his work is done, his aim fulfilled, they will say: we did it ourselves.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "He who knows does not speak. He who speaks does not know.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "To the mind that is still, the whole universe surrenders.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "Nature does not hurry, yet everything is accomplished.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "When I let go of what I am, I become what I might be.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "The softest things in the world overcome the hardest things in the world.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "A good traveler has no fixed plans and is not intent on arriving.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "Simplicity, patience, compassion. These three are your greatest treasures.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "Those who know do not say; those who say do not know.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "The wise man does not lay up his own treasures. The more he gives to others, the more he has for his own.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "Act without expectation.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "The greatest virtue is to follow the Tao and the Tao alone.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "When you realize nothing is lacking, the whole world belongs to you.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "Do the difficult things while they are easy and do the great things while they are small.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "To attain knowledge, add things every day. To attain wisdom, remove things every day.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "The key to growth is the introduction of higher dimensions of consciousness into our awareness.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "He who conquers others is strong; he who conquers himself is mighty.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "The best fighter is never angry.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "If you do not change direction, you may end up where you are heading.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "The Tao is hidden, and has no name; but it is the Tao which is skillful at imparting to all things what they need.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "Mastering others is strength. Mastering yourself is true power.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "Be content with what you have; rejoice in the way things are.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "The more laws and restrictions there are, the poorer people become.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "He who is contented is rich.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "In dwelling, live close to the ground. In thinking, keep to the simple.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "The flame that burns twice as bright burns half as long.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "When the work is done, and one’s name is becoming distinguished, to withdraw into obscurity is the way of Heaven.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "The soft overcomes the hard; the gentle overcomes the rigid.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "Give a man a fish and you feed him for a day. Teach him how to fish and you feed him for a lifetime.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "To lead people, walk behind them.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "The wise man is one who knows what he does not know.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "When there is no desire, all things are at peace.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "The world is won by those who let it go.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "Health is the greatest possession. Contentment is the greatest treasure. Confidence is the greatest friend.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "By letting go, it all gets done.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "The Tao is like a bellows: it is empty yet infinitely capable.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "He who knows that enough is enough will always have enough.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "Silence is a source of great strength.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "The more you know, the less you understand.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "Manifest plainness, embrace simplicity, reduce selfishness, have few desires.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "The way to do is to be.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "When you are at one with the Tao, the Tao welcomes you.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "The truth is not always beautiful, nor beautiful words the truth.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "The great acts are made up of small deeds.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  },
+  {
+    "text": "If you want to awaken all of humanity, then awaken all of yourself.",
+    "author": "Lao Tzu",
+    "category": "Taoism"
+  }
+]

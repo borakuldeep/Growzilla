@@ -23,17 +23,17 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            HomeView(selectedQuote: $selectedQuote, showingDetail: $showingDetail, showingSettings: $showingSettings, notificationTimes: $notificationTimes)
+            HomeView(selectedQuote: $selectedQuote,showingSettings: $showingSettings, notificationTimes: $notificationTimes)
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
             
-            FavoritesView(selectedQuote: $selectedQuote, showingDetail: $showingDetail)
+            FavoritesView(showingDetail: $showingDetail)
                 .tabItem {
                     Label("Favorites", systemImage: "heart")
                 }
             
-            CustomQuotesView(selectedQuote: $selectedQuote, showingDetail: $showingDetail)
+            CustomQuotesView(showingDetail: $showingDetail)
                 .tabItem {
                     Label("Custom", systemImage: "pencil")
                 }

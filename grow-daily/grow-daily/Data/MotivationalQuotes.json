@@ -1,0 +1,492 @@
+[
+  {
+    "text": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "category": "Motivation"
+  },
+  {
+    "text": "Believe you can and you're halfway there.",
+    "author": "Theodore Roosevelt",
+    "category": "Motivation"
+  },
+  {
+    "text": "You are never too old to set another goal or to dream a new dream.",
+    "author": "C.S. Lewis",
+    "category": "Motivation"
+  },
+  {
+    "text": "The future belongs to those who believe in the beauty of their dreams.",
+    "author": "Eleanor Roosevelt",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success is not the absence of obstacles, but the courage to push through them.",
+    "author": "Unknown",
+    "category": "Motivation"
+  },
+  {
+    "text": "Don't watch the clock; do what it does. Keep going.",
+    "author": "Sam Levenson",
+    "category": "Motivation"
+  },
+  {
+    "text": "The only limit to our realization of tomorrow will be our doubts of today.",
+    "author": "Franklin D. Roosevelt",
+    "category": "Motivation"
+  },
+  {
+    "text": "Start where you are. Use what you have. Do what you can.",
+    "author": "Arthur Ashe",
+    "category": "Motivation"
+  },
+  {
+    "text": "It does not matter how slowly you go as long as you do not stop.",
+    "author": "Confucius",
+    "category": "Motivation"
+  },
+  {
+    "text": "What you get by achieving your goals is not as important as what you become by achieving your goals.",
+    "author": "Zig Ziglar",
+    "category": "Motivation"
+  },
+  {
+    "text": "Hardships often prepare ordinary people for an extraordinary destiny.",
+    "author": "C.S. Lewis",
+    "category": "Motivation"
+  },
+  {
+    "text": "The best way to predict the future is to create it.",
+    "author": "Peter Drucker",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success is walking from failure to failure with no loss of enthusiasm.",
+    "author": "Winston Churchill",
+    "category": "Motivation"
+  },
+  {
+    "text": "You miss 100% of the shots you don't take.",
+    "author": "Wayne Gretzky",
+    "category": "Motivation"
+  },
+  {
+    "text": "The journey of a thousand miles begins with a single step.",
+    "author": "Lao Tzu",
+    "category": "Motivation"
+  },
+  {
+    "text": "Dream big and dare to fail.",
+    "author": "Norman Vaughan",
+    "category": "Motivation"
+  },
+  {
+    "text": "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
+    "author": "Ralph Waldo Emerson",
+    "category": "Motivation"
+  },
+  {
+    "text": "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.",
+    "author": "Roy T. Bennett",
+    "category": "Motivation"
+  },
+  {
+    "text": "Your time is limited, so don't waste it living someone else's life.",
+    "author": "Steve Jobs",
+    "category": "Motivation"
+  },
+  {
+    "text": "The only person you are destined to become is the person you decide to be.",
+    "author": "Ralph Waldo Emerson",
+    "category": "Motivation"
+  },
+  {
+    "text": "Everything you’ve ever wanted is on the other side of fear.",
+    "author": "George Addair",
+    "category": "Motivation"
+  },
+  {
+    "text": "Do what you can, with what you have, where you are.",
+    "author": "Theodore Roosevelt",
+    "category": "Motivation"
+  },
+  {
+    "text": "You don’t have to be great to start, but you have to start to be great.",
+    "author": "Zig Ziglar",
+    "category": "Motivation"
+  },
+  {
+    "text": "The harder you work for something, the greater you'll feel when you achieve it.",
+    "author": "Unknown",
+    "category": "Motivation"
+  },
+  {
+    "text": "Don’t let yesterday take up too much of today.",
+    "author": "Will Rogers",
+    "category": "Motivation"
+  },
+  {
+    "text": "If you can dream it, you can do it.",
+    "author": "Walt Disney",
+    "category": "Motivation"
+  },
+  {
+    "text": "The secret of getting ahead is getting started.",
+    "author": "Mark Twain",
+    "category": "Motivation"
+  },
+  {
+    "text": "Opportunities don't happen, you create them.",
+    "author": "Chris Grosser",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+    "author": "Winston Churchill",
+    "category": "Motivation"
+  },
+  {
+    "text": "The way to get started is to quit talking and begin doing.",
+    "author": "Walt Disney",
+    "category": "Motivation"
+  },
+  {
+    "text": "Don't wait for opportunity. Create it.",
+    "author": "Unknown",
+    "category": "Motivation"
+  },
+  {
+    "text": "Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.",
+    "author": "Christian D. Larson",
+    "category": "Motivation"
+  },
+  {
+    "text": "The only way to achieve the impossible is to believe it is possible.",
+    "author": "Charles Kingsleigh",
+    "category": "Motivation"
+  },
+  {
+    "text": "Keep your face always toward the sunshine—and shadows will fall behind you.",
+    "author": "Walt Whitman",
+    "category": "Motivation"
+  },
+  {
+    "text": "You are stronger than you know, braver than you feel, and smarter than you think.",
+    "author": "A.A. Milne",
+    "category": "Motivation"
+  },
+  {
+    "text": "The difference between ordinary and extraordinary is that little extra.",
+    "author": "Jimmy Johnson",
+    "category": "Motivation"
+  },
+  {
+    "text": "Act as if what you do makes a difference. It does.",
+    "author": "William James",
+    "category": "Motivation"
+  },
+  {
+    "text": "You don’t need to see the whole staircase, just take the first step.",
+    "author": "Martin Luther King Jr.",
+    "category": "Motivation"
+  },
+  {
+    "text": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+    "author": "Nelson Mandela",
+    "category": "Motivation"
+  },
+  {
+    "text": "Your dreams are valid, no matter how big they seem.",
+    "author": "Unknown",
+    "category": "Motivation"
+  },
+  {
+    "text": "The only thing standing between you and your goal is the story you keep telling yourself.",
+    "author": "Jordan Belfort",
+    "category": "Motivation"
+  },
+  {
+    "text": "Push yourself, because no one else is going to do it for you.",
+    "author": "Unknown",
+    "category": "Motivation"
+  },
+  {
+    "text": "You don’t have to be perfect to be amazing.",
+    "author": "Unknown",
+    "category": "Motivation"
+  },
+  {
+    "text": "The man who has confidence in himself gains the confidence of others.",
+    "author": "Hasidic Proverb",
+    "category": "Motivation"
+  },
+  {
+    "text": "You can’t go back and change the beginning, but you can start where you are and change the ending.",
+    "author": "C.S. Lewis",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success is to be measured not so much by the position that one has reached in life as by the obstacles which he has overcome.",
+    "author": "Booker T. Washington",
+    "category": "Motivation"
+  },
+  {
+    "text": "Don’t stop when you’re tired. Stop when you’re done.",
+    "author": "Unknown",
+    "category": "Motivation"
+  },
+  {
+    "text": "The best revenge is massive success.",
+    "author": "Frank Sinatra",
+    "category": "Motivation"
+  },
+  {
+    "text": "You have within you, right now, everything you need to deal with whatever the world can throw at you.",
+    "author": "Brian Tracy",
+    "category": "Motivation"
+  },
+  {
+    "text": "If you want to achieve greatness, stop asking for permission.",
+    "author": "Unknown",
+    "category": "Motivation"
+  },
+  {
+    "text": "The only place where success comes before work is in the dictionary.",
+    "author": "Vidal Sassoon",
+    "category": "Motivation"
+  },
+  {
+    "text": "Don’t be afraid to give up the good to go for the great.",
+    "author": "John D. Rockefeller",
+    "category": "Motivation"
+  },
+  {
+    "text": "The biggest adventure you can take is to live the life of your dreams.",
+    "author": "Oprah Winfrey",
+    "category": "Motivation"
+  },
+  {
+    "text": "It’s not whether you get knocked down, it’s whether you get up.",
+    "author": "Vince Lombardi",
+    "category": "Motivation"
+  },
+  {
+    "text": "The only thing worse than being blind is having sight but no vision.",
+    "author": "Helen Keller",
+    "category": "Motivation"
+  },
+  {
+    "text": "Do something today that your future self will thank you for.",
+    "author": "Unknown",
+    "category": "Motivation"
+  },
+  {
+    "text": "The harder the conflict, the greater the triumph.",
+    "author": "George Washington",
+    "category": "Motivation"
+  },
+  {
+    "text": "You are enough just as you are.",
+    "author": "Meghan Markle",
+    "category": "Motivation"
+  },
+  {
+    "text": "The mind is everything. What you think you become.",
+    "author": "Buddha",
+    "category": "Motivation"
+  },
+  {
+    "text": "Challenges are what make life interesting and overcoming them is what makes life meaningful.",
+    "author": "Joshua J. Marine",
+    "category": "Motivation"
+  },
+  {
+    "text": "Don’t let what you cannot do interfere with what you can do.",
+    "author": "John Wooden",
+    "category": "Motivation"
+  },
+  {
+    "text": "The best time to plant a tree was 20 years ago. The second best time is now.",
+    "author": "Chinese Proverb",
+    "category": "Motivation"
+  },
+  {
+    "text": "If you don’t like the road you’re walking, start paving another one.",
+    "author": "Dolly Parton",
+    "category": "Motivation"
+  },
+  {
+    "text": "The only way to discover the limits of the possible is to go beyond them into the impossible.",
+    "author": "Arthur C. Clarke",
+    "category": "Motivation"
+  },
+  {
+    "text": "You don’t need to be better than anyone else, you just need to be better than you used to be.",
+    "author": "Wayne Dyer",
+    "category": "Motivation"
+  },
+  {
+    "text": "Every strike brings me closer to the next home run.",
+    "author": "Babe Ruth",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success is not how high you have climbed, but how you make a positive difference to the world.",
+    "author": "Roy T. Bennett",
+    "category": "Motivation"
+  },
+  {
+    "text": "The only thing that overcomes hard luck is hard work.",
+    "author": "Harry Golden",
+    "category": "Motivation"
+  },
+  {
+    "text": "You are braver than you believe, stronger than you seem, and smarter than you think.",
+    "author": "A.A. Milne",
+    "category": "Motivation"
+  },
+  {
+    "text": "Don’t aim for success if you want it; just do what you love and believe in, and it will come naturally.",
+    "author": "David Frost",
+    "category": "Motivation"
+  },
+  {
+    "text": "The only way to make sense out of change is to plunge into it, move with it, and join the dance.",
+    "author": "Alan Watts",
+    "category": "Motivation"
+  },
+  {
+    "text": "The greatest danger for most of us is not that our aim is too high and we miss it, but that it is too low and we reach it.",
+    "author": "Michelangelo",
+    "category": "Motivation"
+  },
+  {
+    "text": "You don’t have to be rich to sparkle.",
+    "author": "Unknown",
+    "category": "Motivation"
+  },
+  {
+    "text": "Difficult roads often lead to beautiful destinations.",
+    "author": "Unknown",
+    "category": "Motivation"
+  },
+  {
+    "text": "The key to success is to focus on goals, not obstacles.",
+    "author": "Unknown",
+    "category": "Motivation"
+  },
+  {
+    "text": "Your limitation—it’s only your imagination.",
+    "author": "Unknown",
+    "category": "Motivation"
+  },
+  {
+    "text": "Turn your wounds into wisdom.",
+    "author": "Oprah Winfrey",
+    "category": "Motivation"
+  },
+  {
+    "text": "The only thing that’s keeping you from getting what you want is the story you keep telling yourself.",
+    "author": "Tony Robbins",
+    "category": "Motivation"
+  },
+  {
+    "text": "Don’t wait for the perfect moment. Take the moment and make it perfect.",
+    "author": "Unknown",
+    "category": "Motivation"
+  },
+  {
+    "text": "You don’t find the happy life. You make it.",
+    "author": "Camilla Eyring Kimball",
+    "category": "Motivation"
+  },
+  {
+    "text": "The greatest weapon against stress is our ability to choose one thought over another.",
+    "author": "William James",
+    "category": "Motivation"
+  },
+  {
+    "text": "You can’t change how people treat you or what they say about you. All you can do is change how you react to it.",
+    "author": "Mahatma Gandhi",
+    "category": "Motivation"
+  },
+  {
+    "text": "The only way to find true happiness is to risk being completely cut open.",
+    "author": "Chuck Palahniuk",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success is not the key to happiness. Happiness is the key to success.",
+    "author": "Albert Schweitzer",
+    "category": "Motivation"
+  },
+  {
+    "text": "What we fear doing most is usually what we most need to do.",
+    "author": "Tim Ferriss",
+    "category": "Motivation"
+  },
+  {
+    "text": "You are the artist of your own life. Don’t hand the paintbrush to anyone else.",
+    "author": "Unknown",
+    "category": "Motivation"
+  },
+  {
+    "text": "The pain you feel today will be the strength you feel tomorrow.",
+    "author": "Unknown",
+    "category": "Motivation"
+  },
+  {
+    "text": "You don’t have to control your thoughts. You just have to stop letting them control you.",
+    "author": "Dan Millman",
+    "category": "Motivation"
+  },
+  {
+    "text": "The only limit to your impact is your imagination and commitment.",
+    "author": "Tony Robbins",
+    "category": "Motivation"
+  },
+  {
+    "text": "Life is 10% what happens to you and 90% how you react to it.",
+    "author": "Charles R. Swindoll",
+    "category": "Motivation"
+  },
+  {
+    "text": "Don’t be afraid of change. You may lose something good, but you may gain something better.",
+    "author": "Unknown",
+    "category": "Motivation"
+  },
+  {
+    "text": "The only thing you can control is how you respond to the things you can’t control.",
+    "author": "Unknown",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success doesn’t come from what you do occasionally, but from what you do consistently.",
+    "author": "Marie Forleo",
+    "category": "Motivation"
+  },
+  {
+    "text": "You are not here to shrink down to less but to blossom into more.",
+    "author": "Oprah Winfrey",
+    "category": "Motivation"
+  },
+  {
+    "text": "The only way to grow is to step outside your comfort zone.",
+    "author": "Unknown",
+    "category": "Motivation"
+  },
+  {
+    "text": "You don’t have to be fearless, just don’t let fear stop you.",
+    "author": "Unknown",
+    "category": "Motivation"
+  },
+  {
+    "text": "The only thing that makes life possible is permanent, intolerable uncertainty: not knowing what comes next.",
+    "author": "Ursula K. Le Guin",
+    "category": "Motivation"
+  },
+  {
+    "text": "Don’t let the noise of others’ opinions drown out your own inner voice.",
+    "author": "Steve Jobs",
+    "category": "Motivation"
+  }
+]
